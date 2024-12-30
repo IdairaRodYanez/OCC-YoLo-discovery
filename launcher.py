@@ -5,7 +5,7 @@ from itertools import combinations
 def launch_experiment(index, combinations, model_size, conf, iou):
     try:
         # Call run_yolo_experiments.py with dataset and models params
-        subprocess.run(['python3', 'newTrainYolo.py', str(index), combinations, model_size, str(conf), str(iou)], check=True)       
+        subprocess.run(['python3', 'trainYolo.py', str(index), combinations, model_size, str(conf), str(iou)], check=True)       
     except subprocess.CalledProcessError as e:
         print(f"Error in dataset_{index} with model {model_size}: {str(e)}")
     print("Waiting 5 minutes before starting next training...")
