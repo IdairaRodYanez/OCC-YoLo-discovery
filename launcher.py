@@ -24,4 +24,4 @@ if __name__ == "__main__":
       for model in models:  
         for iou in ious:
             for conf in confs:
-                launch_experiment(datasets_indexes[i, str(combination), model, conf, iou)
+                launch_experiment(datasets_indexes[i], str(combination), model, conf, iou)
