@@ -164,7 +164,7 @@ def plot_curves(df):
 # Main function
 def main():
     # Path to the folder of YAML files
-    yaml_folder = r'C:\Users\34636\Desktop\IA\rickSanchez\yamls'
+    yaml_folder = r'C:...\yamls'
 
     target_metric = 'metrics_train/Recall'
     other_interesting_metrics = ['metrics_train/Precision', 'metrics_train/F1Score', 'metrics_train/speed_inference']
